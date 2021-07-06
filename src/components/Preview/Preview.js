@@ -5,6 +5,7 @@ import marked from "marked";
 const getHTML = (input) => {
     const html = marked(input, {
         gfm: true,
+        breaks: true,
     });
     return { __html: html };
 };
