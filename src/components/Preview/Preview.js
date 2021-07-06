@@ -1,12 +1,16 @@
-import React from 'react'
-import "./Preview.scss"
+import React from "react";
+import "./Preview.scss";
+import marked from "marked";
 
-const Preview = () => {
-    return (
-        <div id="preview">
-            This is the preview
-        </div>
-    )
-}
+const getHTML = (input) => {
+    const html = marked(input, {
+        gfm: true,
+    });
+    return { __html: html };
+};
 
-export default Preview
+const Preview = ({ input }) => {
+    return <div id="preview" dangerouslySetInnerHTML={getHTML(input)}></div>;
+};
+
+export default Preview;
