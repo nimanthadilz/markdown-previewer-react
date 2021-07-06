@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import "./Editor.scss";
 
 const Editor = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+    return <textarea id="editor" />;
+};
 
-export default Editor
+export default Editor;

@@ -4,7 +4,6 @@ import Main from "./components/Main/Main";
 import Editor from "./components/Editor/Editor";
 import Preview from "./components/Preview/Preview";
 
-
 function App() {
     return (
         <div className="App">

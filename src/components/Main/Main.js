@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import "./Main.scss";
 
-const Main = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+const Main = (props) => {
+    return <div className="main">{props.children}</div>;
+};
 
-export default Main
+export default Main;
